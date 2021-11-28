@@ -1,0 +1,66 @@
+<html ng-app="" ng-init="results = {result: 'Passed'}">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  </head>
+  <body>
+    <div>
+    <div>
+      <br>
+      <br>
+      <form class="frm1" action="index.html" method="post">
+
+      <label align="right">First Name:</label>
+      <input align="left" type="text" ng-model="fname" placeholder="Enter first name">
+      <br>
+      <label align="right">Last Name:</label>
+      <input align="left" type="text" ng-model="lname" placeholder="Enter last name">
+      <br>
+      <label align="right">Middle Name:</label>
+      <input align="left" type="text" ng-model="mname" placeholder="Enter middle name">
+      <br>
+      <label align="right">Year Level:</label>
+      <input align="left" type="text" ng-model="ylevel" placeholder="Enter year level">
+      <br>
+      <label align="right">Course:</label>
+      <input align="left" type="text" ng-model="course" placeholder="Enter course">
+      <br>
+      <label align="right">School:</label>
+      <input align="left" type="text" ng-model="school" placeholder="Enter school">
+      <p>Grades: </p>
+      <label align="right">Math:</label>
+      <input align="left" type="text" ng-model="math" placeholder="Enter your grade">
+      <br>
+      <label align="right">Science:</label>
+      <input align="left" type="text" ng-model="sci" placeholder="Enter your grade">
+      <br>
+      <label align="right">English:</label>
+      <input align="left" type="text" ng-model="eng" placeholder="Enter your grade">
+      <br>
+      <label align="right">Filipino:</label>
+      <input align="left" type="text" ng-model="fil" placeholder="Enter your grade">
+      <br>
+      <label align="right">TLE:</label>
+      <input align="left" type="text" ng-model="tle" placeholder="Enter your grade">
+      <br>
+      </form>
+      <p>First Name: {{fname}}</p>
+      <p>Last Name: {{lname}}</p>
+      <p>Middle Name: {{mname}}</p>
+      <p>Full Name: {{fname + " " + mname +" "+ lname}}</p>
+      <p>Year Level: {{ylevel}}</p>
+      <p>Course: {{course}}</p>
+      <p>School: {{school}}</p>
+      <p>Your year level, course and school are: {{ylevel + ", " + course + ", " + school}}</p>
+      <p>Math: {{math}}</p>
+      <p>Science: {{sci}}</p>
+      <p>English: {{eng}}</p>
+      <p>Filipino: {{fil}}</p>
+      <p>TLE: {{tle}}</p>
+      <br>
+      <p>Grades: {{result}}</p>
+      <p>Grades: {{math + ", " + sci + ", " + eng + ", " + fil + ", " + tle}}</p>
+      <p>Remarks: {{result}}</p>
+    </div>
+    </div>
+  </body>
+</html>
